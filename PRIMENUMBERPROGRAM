@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int prime(int &b);
+
+int main ()
+{int x;
+cin>>x;
+prime(x);
+    cout<<x<<endl;
+}
+
+int prime(int &b)
+{
+    int a[100],i,j,f=1,k=0;
+for(i=2;i<=b;i++)
+{
+    for (j=2;j<=i/2;++j)
+    {
+        if (i%j==0)
+        {f=0;}
+        break;
+    }
+}
+if (f==1)
+{a[k]=i;
+    k++;
+}
+return a[100];
+}
